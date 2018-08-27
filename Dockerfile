@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 ENV DEBIAN_FRONTEND noninteractive
 
 # XXX: this needs to be updated if Qt is updated in provision.sh
-ENV PATH="/opt/qt511/5.11.2/gcc_64/bin:${PATH}"
+ENV PATH="/opt/qt59/5.9.2/gcc_64/bin:${PATH}"
 
 # Install, use dev tools, and then clean up in one RUN transaction
 # to minimize image size.

@@ -88,7 +88,7 @@ install_qtwebkit_deps () {
         mesa-common-dev \
         libfontconfig1-dev \
         libicu-dev \
-        libpng12-dev \
+        libpng-dev \
         libxslt1-dev \
         libxml2-dev \
         libhyphen-dev \

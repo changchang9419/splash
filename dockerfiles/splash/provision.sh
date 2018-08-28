@@ -122,7 +122,7 @@ install_official_qt () {
     # as well as qt-installer-noninteractive.qs script.
     _ensure_folders && \
     curl -L -o /downloads/qt-installer.run \
-               http://download.qt.io/official_releases/qt/5.9/5.9.1/qt-opensource-linux-x64-5.9.1.run && \
+               http://download.qt.io/official_releases/qt/5.9/${SPLASH_PYQT_VERSION}/qt-opensource-linux-x64-${SPLASH_PYQT_VERSION}.run && \
     chmod +x /downloads/qt-installer.run && \
     xvfb-run /downloads/qt-installer.run \
         --script /tmp/script.qs \

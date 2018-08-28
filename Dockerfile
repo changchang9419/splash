@@ -25,5 +25,25 @@ RUN /tmp/provision.sh \
     rm /tmp/provision.sh
 
 
-ADD app /app/
+ADD app /app
+RUN pip3 install /app
+ENV PYTHONPATH $PYTHONPATH:/app
+
+VOLUME [ \
+    "/etc/splash/proxy-profiles", \
+    "/etc/splash/js-profiles", \
+    "/etc/splash/filters", \
+    "/etc/splash/lua_modules" \
+]
+
+EXPOSE 8050 5023
+
+ENTRYPOINT [ \
+    "python3", \
+    "/app/bin/splash", \
+    "--proxy-profiles-path", "/etc/splash/proxy-profiles", \
+    "--js-profiles-path", "/etc/splash/js-profiles", \
+    "--filters-path", "/etc/splash/filters", \
+    "--lua-package-path", "/etc/splash/lua_modules/?.lua" \
+]
 

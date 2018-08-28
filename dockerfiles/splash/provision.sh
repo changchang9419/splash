@@ -234,9 +234,9 @@ remove_builddeps () {
     # Uninstall build dependencies.
     apt-get remove -y --purge \
         python3-dev \
-        libpython3.5-dev \
-        libpython3.5 \
-        libpython3.5-dev \
+        libpython3.6-dev \
+        libpython3.6 \
+        libpython3.6-dev \
         build-essential \
         libre2-dev \
         liblua5.2-dev \

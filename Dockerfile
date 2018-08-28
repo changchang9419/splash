@@ -25,7 +25,7 @@ RUN /tmp/provision.sh \
     rm /tmp/provision.sh
 
 
-ADD app /
+ADD app /app/
 RUN pip3 install /app
 ENV PYTHONPATH $PYTHONPATH:/app
 

@@ -33,7 +33,7 @@ Controller.prototype.ComponentSelectionPageCallback = function() {
     // to install everything default, then check components.xml file.
     widget.deselectAll();
     widget.selectComponent("qt.592.gcc_64");
-    widget.selectComponent("qt.592.qtwebengine.gcc_64");
+    widget.selectComponent("qt.592.qtwebengine");
     gui.clickButton(buttons.NextButton);
 }
 

@@ -29,6 +29,7 @@ setup_args = {
     'scripts': ['bin/splash'],
     'packages': ['splash', 'splash.har', 'splash.kernel'],
     'package_data': {'splash': [
+		'bin/splash',
         'vendor/harviewer/webapp/css/*.css',
         'vendor/harviewer/webapp/css/images/*.*',
         'vendor/harviewer/webapp/css/images/menu/*.*',
@@ -47,7 +48,6 @@ setup_args = {
         'vendor/harviewer/webapp/scripts/tabs/*.*',
         'vendor/harviewer/webapp/har.js',
         'ui/*.*',
-
         'examples/*.lua',
         'lua_modules/*.lua',
         'lua_modules/libs/*.lua',
@@ -71,6 +71,7 @@ setup_args = {
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Development Status :: 5 - Production/Stable',

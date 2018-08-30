@@ -29,7 +29,6 @@ setup_args = {
     'scripts': ['bin/splash'],
     'packages': ['splash', 'splash.har', 'splash.kernel'],
     'package_data': {'splash': [
-		'bin/splash',
         'vendor/harviewer/webapp/css/*.css',
         'vendor/harviewer/webapp/css/images/*.*',
         'vendor/harviewer/webapp/css/images/menu/*.*',
